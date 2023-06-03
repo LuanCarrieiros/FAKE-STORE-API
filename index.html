@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    
+    
+    <title>iTech!</title>
+    <style>
+        p.truncate-3l {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body style="min-width:372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
+        <div class="container">
+            <a class="navbar-brand" href=""><strong>iTech!</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Minha conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Rastrear pedido</a>
+                    </li>
+                </ul>
+                <div class="align-self-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Quero me cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#cart3"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div id="carouselMain" class="carousel carousel-dark slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselMain" data-slide-to="1" class="active"></li>
+                <li data-target="#carouselMain" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center" data-interval="3000">
+                    <img src="./img/slides/slide02.png" alt="" class="img-fluid d-none d-md-block">
+                    <img src="./img/slides/slide02small.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item text-center" data-interval="3000">
+                    <img src="./img/slides/slide01.png" alt="" class="img-fluid d-none d-md-block">
+                    <img src="./img/slides/slide02small.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item text-center" data-interval="3000">
+                    <img src="./img/slides/slide03.png" alt="" class="img-fluid d-none d-md-block">
+                    <img src="./img/slides/slide02small.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próxixmo</span>
+            </a>
+        </div>
+        <hr class="mt-3" />
+    </header>
+
+    <main class="mb-5 pb-5 mb-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                            <button class="btn btn-primary">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenador pelo nome</option>
+                                <option>Ordenador pelo menor preço</option>
+                                <option>Ordenador pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item">
+                                    <button class="page-link">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item disabled">
+                                    <button class="page-link">3</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">4</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">5</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">6</button>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="row g-3">
+                <h3 class="text text-center text-decoration-none">PRODUTOS</h3>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000001.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 2.499,90
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Placa de Vídeo RTX 3060</h5>
+                            <p class="card-text truncate-3l">
+                                Placa de Vídeo RTX 3060 Asus Dual O12G V2 NVIDIA GeForce, 12GB GDDR6, LHR, DLSS, Ray
+                                Tracing - DUAL-RTX3060-O12G-V2
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000002.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 249,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Headset Gamer Husky</h5>
+                            <p class="card-text truncate-3l">
+                                Headset Gamer Husky Gaming Blizzard, Preto, Microfone removível, Surround 7.1 & Stereo,
+                                Driver 53mm, Conexão P3 & USB - HGMD018
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">80 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart-fill"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000003.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 1.749,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Robô Aspirador de Pó KaBuM!</h5>
+                            <p class="card-text truncate-3l">
+                                Robô Aspirador de Pó KaBuM! Smart 700, Preto, Mapeamento IR 360º, Controle via
+                                Aplicativo, Google Assistant e Alexa - KBSF003
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <button class="btn btn-light disabled" disabled>
+                                    <small>Reabastecendo Estoque</small>
+                                </button>
+                            </div>
+                            <small class="text-danger"><b>Produto Esgotado</b></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart-fill"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000004.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 3.999,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Console Sony Playstation 5, Edição Digital</h5>
+                            <p class="card-text truncate-3l">
+                                Console Sony Playstation 5, Edição Digital
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">14 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000005.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 2.627,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Processador AMD Ryzen 7 5800X3D</h5>
+                            <p class="card-text truncate-3l">
+                                Processador AMD Ryzen 7 5800X3D, 3.4GHz (4.5GHz Max Turbo), Cache 100MB, AM4, Sem Vídeo
+                                - 100-100000651WOF
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">311 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart-fill"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000006.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 4.669,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Projetor Benq</h5>
+                            <p class="card-text truncate-3l">
+                                Projetor Benq, 3600 Lumens ANSI, HDMI, SVGA, Branco - MS550
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">3 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000007.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 2.099,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Monitor Custom ISM-1560E</h5>
+                            <p class="card-text truncate-3l">
+                                Monitor Custom ISM-1560E Desktop Touch Screen 15.6, VGA e USB, Preto - GPP156N12003X5
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">6 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000008.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 3.699,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Placa de Vídeo RTX 3070 MSI</h5>
+                            <p class="card-text truncate-3l">
+                                Placa de Vídeo RTX 3070 MSI Ventus 3X Plus NVIDIA GeForce, 8GB GDDR6, LHR, DLSS, Ray
+                                Tracing - GeForce RTX 3070 VENTUS 3X PLUS 8G OC LHR
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">78 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000009.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 319,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Water Cooler Gamer Rise Mode</h5>
+                            <p class="card-text truncate-3l">
+                                Water Cooler Gamer Rise Mode, ARGB, Intel e AMD, 240mm, Preto - RM-WCB-04-ARGB
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">112 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000010.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 899,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Razer Viper Ultimate</h5>
+                            <p class="card-text truncate-3l">
+                                Mouse Sem Fio Gamer Razer Viper Ultimate, Chroma, com Dock, Optical Switch, 8 Botões,
+                                20000DPI - RZ01-03050100-R3U1
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">229 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000011.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 899,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Razer Huntsman V2 Tenkeyless</h5>
+                            <p class="card-text truncate-3l">
+                                Teclado Gamer Razer Huntsman V2 Tenkeyless, Chroma RGB, Switch Óptico Razer, USB-C, com
+                                Apoio de Pulso, Preto - RZ03-03940200-R3U1
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">325 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#suit-heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./img/produtos/000012.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 1.199,99
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Logitech G733</h5>
+                            <p class="card-text truncate-3l">
+                                Headset Gamer Sem Fio Logitech G733 7.1 Dolby Surround RGB LIGHTSYNC, Blue VOICE para PC
+                                e PlayStation, Preto - 981-000863
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">63 unidades em estoque</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div>
+                <div class="row pb-5">
+                    <div class="col-12 ">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="ml-3 d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenador pelo nome</option>
+                                    <option>Ordenador pelo menor preço</option>
+                                    <option>Ordenador pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <button class="page-link">1</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">2</button>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <button class="page-link">3</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">4</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">5</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">6</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <h3 class="text text-center ">ITENS MAIS PROCURADOS</h3>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light">
+                            <a href="" class="position-absolute right-0 p-2 text-danger">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#suit-heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./img/produtos/01.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 5.366,58
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Monitor Samsung 26.9" 2560x1440</h5>
+                                <p class="card-text truncate-3l">
+                                    Monitor Samsung 26.9" 2560x1440, LED, UHD, Odyssey G7, 240HZ, 1ms, 4K, Curvo, 2X
+                                    HDMI, USB, Display Port - Lc27g75tq
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-primary">
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">20 unidades em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light">
+                            <a href="" class="position-absolute right-0 p-2 text-danger">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#suit-heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./img/produtos/02.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 1.799,10
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Monitor Gamer Samsung Odyssey G32A</h5>
+                                <p class="card-text truncate-3l">
+                                    Monitor Gamer Samsung Odyssey G32A, 27 Pol. FHD, 165Hz, 1Ms, HDMI + DP, Ajuste De
+                                    Altura, Freesync, Preto - Ls27ag32anlxzd
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-primary">
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">32 unidades em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light">
+                            <a href="" class="position-absolute right-0 p-2 text-danger">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#suit-heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./img/produtos/03.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 364,00
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Echo Dot 5ª Geração Amazon</h5>
+                                <p class="card-text truncate-3l">
+                                    Echo Dot 5ª Geração Amazon, Com Alexa, Preta
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-primary">
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">22 unidades em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light">
+                            <a href="" class="position-absolute right-0 p-2 text-danger">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#suit-heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./img/produtos/04.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 359,10
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Echo Dot (4ª Geração) com Alexa</h5>
+                                <p class="card-text truncate-3l">
+                                    Echo Dot (4ª Geração) com Alexa, Amazon Smart Speaker Branco - B084KQBYYM
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-primary">
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">45 unidades em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light">
+                            <a href="" class="position-absolute right-0 p-2 text-danger">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#suit-heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./img/produtos/05.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2.469,90
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Apple Watch SE 44MM GPS</h5>
+                                <p class="card-text truncate-3l">
+                                    Apple Watch SE 44MM GPS, Case de Alumínio Cinza, Sport Band Preta - MKQ63LL/A
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-primary">
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">7 unidades em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light">
+                            <a href="" class="position-absolute right-0 p-2 text-danger">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#suit-heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./img/produtos/06.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 999,99
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Microfone Gamer HyperX QuadCast S Podcast</h5>
+                                <p class="card-text truncate-3l">
+                                    Microfone Gamer HyperX QuadCast S Podcast, Antivibração, LED RGB, USB, Compatível
+                                    com PC, PS4 e Mac - 4P5P7AA
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-primary">
+                                        Adicionar ao Carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">12 unidades em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row py-4">
+                            <h6 class="text text-bold">NEWSLETTER</h6>
+                            <div class="col-12 col-md-5">
+                                <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control" placeholder="seuemail@algumacoisa.com">
+                                        <button class="btn btn-primary">CADASTRAR</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+        </div>
+    </main>
+
+    <footer class="border-top bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-3 text-center">
+                    <h6 class="text text-bold"> Métodos de Pagamento </h6>
+                    <a href="#" class="text-decoration-none text-dark">
+                        <div class="d-block">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#paypal"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#credit-card"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#cash"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#currency-bitcoin"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#cash-coin"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h6 class="text text-bold">Nossas Redes Sociais</h6>
+                    <a href="#" class="text-decoration-none text-dark">
+                        <div class="d-block">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#facebook"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#instagram"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#twitter"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#twitch"></use>
+                            </svg>
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="./bi.svg#youtube"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h6>Links Rápidos</h6>
+                    <div class="d-block text-center">
+                        <ul><a href="#" class="text-dark text-md-left">Ajuda</a></ul>
+                        <ul><a href="#" class="text-dark text-md-left">Devolução</a></ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-center text-md-left">
+                    <h6 class="text text-bold"> Fale Conosco </h6>
+                    <svg class="bi" width="16" height="16" fill="currentColor">
+                        <use xlink:href="./bi.svg#envelope-at-fill"></use>
+                    </svg>
+                    <a href="#" class="text-decoration-none text-dark">luan.rosa@sga.pucminas.br</a>
+                    <div class="d-block">
+                        <svg class="bi" width="16" height="16" fill="currentColor">
+                            <use xlink:href="./bi.svg#telephone"></use>
+                        </svg>
+                        <a href="#" class="text-decoration-none text-dark">0800 123 1234</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

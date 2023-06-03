@@ -1,0 +1,1 @@
+Por favor, abrir com a extensão live server do VS CODE (caso a possua) para otimização de todos os ícones, obrigado!
