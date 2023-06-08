@@ -1,5 +1,6 @@
 function carregarTela() {
     fetch('https://fakestoreapi.com/products')
+    
         .then(res => res.json())
         .then(data => {
             let str = '<h3 class="text text-center text-decoration-none">PRODUTOS</h3>'
