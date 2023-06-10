@@ -9,7 +9,7 @@ fetch('https://fakestoreapi.com/products/'+ urlParams.get('id'))
     $('#descricao').text(data.description);
     $('#imagem-detalhes').attr('src', data.image);
     $('#categoria').text('Categoria: ' + data.category);
-    $('#preco').text('Preço: ' + data.price);
+    $('#preco').text('Preço: R$' + data.price);
     $('#rate').text('Nota: ' + data.rating.rate);
     $('#count').text('Avaliações: ' + data.rating.count);
 
